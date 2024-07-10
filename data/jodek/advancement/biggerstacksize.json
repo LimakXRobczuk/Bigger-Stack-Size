@@ -1,0 +1,76 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:totem_of_undying"
+      },
+      "title": "Bigger Stack Size                                                                                    ",
+      "description": [
+        "",
+        {
+            "text": "Stack size of 64 for all items! (Armor, Tools, Weapons excluded)\n",
+            "color": "white"
+        },
+        {
+            "text": "\n",
+            "color": "yellow"
+        },
+        {
+            "text": "/trigger",
+            "color": "yellow"
+        },
+        {
+            "text": " help.biggerstacksize\n",
+            "color": "yellow"
+        },
+        {
+            "text": "for help\n",
+            "color": "white"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "Datapack version: ",
+            "color": "dark_green"
+        },
+        {
+            "text": "v.1.3.0",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "Game version: ",
+            "color": "dark_green"
+        },
+        {
+            "text": "1.21",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "\n",
+            "color": "green"
+        },
+        {
+            "text": "modrinth.com/datapack/bigger-stack-size",
+            "color": "dark_purple"
+        }
+    ],
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "parent": "jodek:utility",
+    "criteria": {
+      "tick": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }

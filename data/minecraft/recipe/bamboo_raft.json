@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "B": {
+      "item": "minecraft:bamboo_planks"
+    }
+  },
+  "pattern": [
+    "B B",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:bamboo_raft",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

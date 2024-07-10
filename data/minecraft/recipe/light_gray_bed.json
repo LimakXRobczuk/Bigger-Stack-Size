@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bed",
+  "key": {
+    "L": {
+      "item": "minecraft:light_gray_wool"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:light_gray_bed",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

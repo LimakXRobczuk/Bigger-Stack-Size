@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "O": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "O O",
+    "OOO"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:oak_boat",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_sign",
+  "key": {
+    "B": {
+      "item": "minecraft:birch_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BBB",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "id": "minecraft:birch_sign",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

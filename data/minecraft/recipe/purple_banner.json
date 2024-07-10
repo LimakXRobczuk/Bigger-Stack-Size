@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "banner",
+  "key": {
+    "P": {
+      "item": "minecraft:purple_wool"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:purple_banner",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

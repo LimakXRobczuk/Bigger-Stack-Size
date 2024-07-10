@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "banner",
+  "key": {
+    "L": {
+      "item": "minecraft:lime_wool"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LLL",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:lime_banner",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

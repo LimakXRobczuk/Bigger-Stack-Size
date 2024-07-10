@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bed",
+  "key": {
+    "C": {
+      "item": "minecraft:cyan_wool"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "PPP"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:cyan_bed",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

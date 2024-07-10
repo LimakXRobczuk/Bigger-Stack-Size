@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "banner",
+  "key": {
+    "Y": {
+      "item": "minecraft:yellow_wool"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "YYY",
+    "YYY",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:yellow_banner",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

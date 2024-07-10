@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "boat",
+  "key": {
+    "J": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "pattern": [
+    "J J",
+    "JJJ"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:jungle_boat",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

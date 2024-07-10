@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "bed",
+  "key": {
+    "P": {
+      "item": "minecraft:purple_wool"
+    },
+    "L": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:purple_bed",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}

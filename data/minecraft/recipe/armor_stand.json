@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "M": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " S ",
+    "SMS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:armor_stand",
+    "components": {
+      "max_stack_size": 64
+    }
+  }
+}
