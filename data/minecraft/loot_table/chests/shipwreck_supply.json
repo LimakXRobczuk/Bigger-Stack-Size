@@ -273,6 +273,12 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -283,6 +289,12 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -293,6 +305,12 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -303,6 +321,12 @@
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         }

@@ -31,6 +31,12 @@
                 "min": 0.5
               },
               "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:shield",
@@ -47,6 +53,12 @@
                 "min": 5.0
               },
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:bow",
@@ -63,6 +75,12 @@
                 "min": 5.0
               },
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:crossbow",
@@ -79,6 +97,12 @@
                 "min": 0.0
               },
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:iron_axe",
@@ -95,6 +119,12 @@
                 "min": 0.0
               },
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:iron_chestplate",
@@ -177,6 +207,12 @@
                 "min": 5.0
               },
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:diamond_axe"

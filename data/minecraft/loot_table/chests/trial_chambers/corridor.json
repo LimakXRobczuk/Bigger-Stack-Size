@@ -24,6 +24,12 @@
             {
               "function": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:iron_axe"
@@ -59,6 +65,12 @@
                 "min": 0.15
               },
               "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:stone_axe",
@@ -80,6 +92,12 @@
                 "min": 0.15
               },
               "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:stone_pickaxe",
@@ -96,6 +114,12 @@
                 "min": 1.0
               },
               "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:ender_pearl",

@@ -176,6 +176,12 @@
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:regeneration"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:potion"
@@ -191,6 +197,12 @@
             {
               "function": "minecraft:set_potion",
               "id": "minecraft:strength"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:potion"
@@ -211,6 +223,12 @@
                 "min": 0.15
               },
               "function": "minecraft:set_damage"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:stone_pickaxe",
@@ -223,6 +241,12 @@
               "add": false,
               "count": 1.0,
               "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ],
           "name": "minecraft:milk_bucket"

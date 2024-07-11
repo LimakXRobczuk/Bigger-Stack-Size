@@ -29,6 +29,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -48,6 +54,12 @@
             },
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -195,6 +207,12 @@
             },
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -224,6 +242,12 @@
               "enchantments": [
                 "minecraft:soul_speed"
               ]
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -238,6 +262,12 @@
             },
             {
               "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -261,6 +291,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -304,6 +340,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -315,6 +357,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -326,6 +374,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -337,6 +391,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -348,6 +408,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },

@@ -38,6 +38,12 @@
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
               "treasure": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -58,6 +64,12 @@
               "function": "minecraft:enchant_with_levels",
               "levels": 30,
               "treasure": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },

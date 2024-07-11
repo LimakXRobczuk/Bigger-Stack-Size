@@ -96,6 +96,12 @@
                 "max": 50
               },
               "treasure": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -120,6 +126,12 @@
               "function": "minecraft:set_count",
               "count": 1,
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -180,6 +192,12 @@
                 "max": 50
               },
               "treasure": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -305,6 +323,12 @@
                 "max": 39
               },
               "treasure": true
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },
@@ -337,6 +361,12 @@
                 "max": 3
               },
               "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
             }
           ]
         },

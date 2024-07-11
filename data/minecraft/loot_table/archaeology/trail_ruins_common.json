@@ -17,7 +17,15 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:wooden_hoe",
-          "weight": 2
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 64
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
