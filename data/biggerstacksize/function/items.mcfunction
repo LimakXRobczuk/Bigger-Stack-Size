@@ -1,137 +1,171 @@
-
 # misk
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:armor_stand"}}] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:bucket"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:egg"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:ender_pearl"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:honey_bottle"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:saddle"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:shulker_box"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:snowball"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:totem_of_undying"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:suspicious_stew"} }] run function biggerstacksize:change_stack_size
+execute if score &armor_stand      blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:armor_stand"}}]      run function biggerstacksize:change_stack_size
+execute if score &egg              blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:egg"}}]              run function biggerstacksize:change_stack_size
+execute if score &ender_pearl      blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:ender_pearl"}}]      run function biggerstacksize:change_stack_size
+execute if score &honey_bottle     blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:honey_bottle"}}]     run function biggerstacksize:change_stack_size
+execute if score &saddle           blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:saddle"}}]           run function biggerstacksize:change_stack_size
+execute if score &snowball         blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:snowball"}}]         run function biggerstacksize:change_stack_size
+execute if score &totem_of_undying blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:totem_of_undying"}}] run function biggerstacksize:change_stack_size
 
+# buckets — lxr addition
+execute if score &bucket               blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:bucket"}}]               run function biggerstacksize:change_stack_size
+execute if score &cod_bucket           blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cod_bucket"}}]           run function biggerstacksize:change_stack_size
+execute if score &salmon_bucket        blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:salmon_bucket"}}]        run function biggerstacksize:change_stack_size
+execute if score &pufferfish_bucket    blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:pufferfish_bucket"}}]    run function biggerstacksize:change_stack_size
+execute if score &tropical_fish_bucket blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:tropical_fish_bucket"}}] run function biggerstacksize:change_stack_size
+execute if score &axolotl_bucket       blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:axolotl_bucket"}}]       run function biggerstacksize:change_stack_size
+execute if score &tadpole_bucket       blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:tadpole_bucket"}}]       run function biggerstacksize:change_stack_size
+execute if score &lava_bucket          blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:lava_bucket"}}]          run function biggerstacksize:change_stack_size
+execute if score &milk_bucket          blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:milk_bucket"}}]          run function biggerstacksize:change_stack_size
+execute if score &powder_snow_bucket   blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:powder_snow_bucket"}}]   run function biggerstacksize:change_stack_size
+execute if score &water_bucket         blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:water_bucket"}}]         run function biggerstacksize:change_stack_size
+
+# food — lxr addition
+execute if score &cake            blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cake"}}]            run function biggerstacksize:change_stack_size
+execute if score &suspicious_stew blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:suspicious_stew"}}] run function biggerstacksize:change_stack_size
+execute if score &mushroom_stew   blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mushroom_stew"}}]   run function biggerstacksize:change_stack_size
+execute if score &rabbit_stew     blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:rabbit_stew"}}]     run function biggerstacksize:change_stack_size
+execute if score &beetroot_soup   blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:beetroot_soup"}}]   run function biggerstacksize:change_stack_size
+
+# shulker boxes
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:blue_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:brown_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cyan_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:gray_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:green_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_blue_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_gray_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:lime_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:magenta_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:orange_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:pink_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:purple_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:red_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:white_shulker_box"} }] run function biggerstacksize:change_stack_size
+execute if score &shulker_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:yellow_shulker_box"} }] run function biggerstacksize:change_stack_size
 
 # boats
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:acacia_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:bamboo_raft"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:birch_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cherry_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:dark_oak_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:jungle_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:mangrove_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:oak_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:spruce_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &acacia_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:acacia_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &bamboo_raft blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:bamboo_raft"} }] run function biggerstacksize:change_stack_size
+execute if score &birch_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:birch_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &cherry_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cherry_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &dark_oak_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:dark_oak_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &jungle_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:jungle_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &mangrove_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mangrove_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &oak_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:oak_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &spruce_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:spruce_boat"} }] run function biggerstacksize:change_stack_size
 
 # chest boats
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:acacia_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:bamboo_chest_raft"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:birch_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cherry_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:dark_oak_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:jungle_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:mangrove_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:oak_chest_boat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:spruce_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &acacia_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:acacia_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &bamboo_chest_raft blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:bamboo_chest_raft"} }] run function biggerstacksize:change_stack_size
+execute if score &birch_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:birch_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &cherry_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cherry_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &dark_oak_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:dark_oak_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &jungle_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:jungle_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &mangrove_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mangrove_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &oak_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:oak_chest_boat"} }] run function biggerstacksize:change_stack_size
+execute if score &spruce_chest_boat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:spruce_chest_boat"} }] run function biggerstacksize:change_stack_size
 
 # hanging signs
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:acacia_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:bamboo_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:birch_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cherry_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:crimson_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:dark_oak_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:jungle_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:mangrove_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:oak_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:spruce_hanging_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:warped_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &acacia_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:acacia_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &bamboo_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:bamboo_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &birch_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:birch_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &cherry_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cherry_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &crimson_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:crimson_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &dark_oak_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:dark_oak_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &jungle_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:jungle_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &mangrove_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mangrove_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &oak_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:oak_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &spruce_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:spruce_hanging_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &warped_hanging_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:warped_hanging_sign"} }] run function biggerstacksize:change_stack_size
 
 # signs
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:acacia_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:bamboo_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:birch_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cherry_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:crimson_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:dark_oak_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:jungle_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:mangrove_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:oak_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:spruce_sign"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:warped_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &acacia_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:acacia_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &bamboo_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:bamboo_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &birch_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:birch_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &cherry_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cherry_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &crimson_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:crimson_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &dark_oak_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:dark_oak_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &jungle_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:jungle_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &mangrove_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mangrove_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &oak_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:oak_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &spruce_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:spruce_sign"} }] run function biggerstacksize:change_stack_size
+execute if score &warped_sign blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:warped_sign"} }] run function biggerstacksize:change_stack_size
 
 # beds
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:blue_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:brown_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cyan_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:gray_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:green_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:light_blue_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:light_gray_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:lime_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:magenta_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:orange_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:pink_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:purple_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:red_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:white_bed"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:yellow_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &blue_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:blue_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &brown_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:brown_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &cyan_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cyan_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &gray_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:gray_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &green_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:green_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &light_blue_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_blue_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &light_gray_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_gray_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &lime_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:lime_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &magenta_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:magenta_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &orange_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:orange_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &pink_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:pink_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &purple_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:purple_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &red_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:red_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &white_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:white_bed"} }] run function biggerstacksize:change_stack_size
+execute if score &yellow_bed blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:yellow_bed"} }] run function biggerstacksize:change_stack_size
 
 # banners
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:blue_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:brown_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:cyan_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:gray_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:green_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:light_blue_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:light_gray_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:lime_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:magenta_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:orange_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:pink_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:purple_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:red_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:white_banner"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:yellow_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &black_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:black_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &blue_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:blue_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &brown_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:brown_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &cyan_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:cyan_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &gray_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:gray_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &green_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:green_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &light_blue_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_blue_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &light_gray_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:light_gray_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &lime_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:lime_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &magenta_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:magenta_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &orange_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:orange_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &pink_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:pink_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &purple_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:purple_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &red_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:red_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &white_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:white_banner"} }] run function biggerstacksize:change_stack_size
+execute if score &yellow_banner blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:yellow_banner"} }] run function biggerstacksize:change_stack_size
 
 # minecarts
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:chest_minecart"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:furnace_minecart"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:hopper_minecart"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:minecart"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:tnt_minecart"} }] run function biggerstacksize:change_stack_size
+execute if score &chest_minecart blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:chest_minecart"} }] run function biggerstacksize:change_stack_size
+execute if score &furnace_minecart blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:furnace_minecart"} }] run function biggerstacksize:change_stack_size
+execute if score &hopper_minecart blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:hopper_minecart"} }] run function biggerstacksize:change_stack_size
+execute if score &minecart blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:minecart"} }] run function biggerstacksize:change_stack_size
+execute if score &tnt_minecart blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:tnt_minecart"} }] run function biggerstacksize:change_stack_size
 
 # banner patterns
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:creeper_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:flower_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:globe_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:mojang_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:piglin_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:skull_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:guster_banner_pattern"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:flow_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &creeper_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:creeper_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &flower_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:flower_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &globe_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:globe_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &mojang_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:mojang_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &piglin_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:piglin_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &skull_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:skull_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &guster_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:guster_banner_pattern"} }] run function biggerstacksize:change_stack_size
+execute if score &flow_banner_pattern blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:flow_banner_pattern"} }] run function biggerstacksize:change_stack_size
 
 # discs
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_13"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_cat"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_blocks"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_chirp"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_far"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_mall"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_mellohi"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_stal"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_strad"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_ward"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_11"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_wait"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_otherside"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_relic"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_pigstep"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_creator_music_box"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_precipice"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:music_disc_creator"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_13 blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_13"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_cat blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_cat"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_blocks blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_blocks"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_chirp blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_chirp"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_far blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_far"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_mall blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_mall"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_mellohi blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_mellohi"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_stal blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_stal"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_strad blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_strad"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_ward blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_ward"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_11 blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_11"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_wait blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_wait"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_otherside blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_otherside"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_relic blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_relic"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_pigstep blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_pigstep"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_creator_music_box blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_creator_music_box"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_precipice blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_precipice"} }] run function biggerstacksize:change_stack_size
+execute if score &music_disc_creator blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:music_disc_creator"} }] run function biggerstacksize:change_stack_size
 
 # potions
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:potion"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:splash_potion"} }] run function biggerstacksize:change_stack_size
-execute if entity @s[tag=!stacked] as @s[nbt={Item:{id:"minecraft:lingering_potion"} }] run function biggerstacksize:change_stack_size
+execute if score &potion blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:potion"} }] run function biggerstacksize:change_stack_size
+execute if score &splash_potion blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:splash_potion"} }] run function biggerstacksize:change_stack_size
+execute if score &lingering_potion blacklist.biggerstacksize matches 0 if entity @s[nbt={Item:{components:{"minecraft:custom_data":{biggerstacksize:0b}}}}] as @s[nbt={Item:{id:"minecraft:lingering_potion"} }] run function biggerstacksize:change_stack_size
